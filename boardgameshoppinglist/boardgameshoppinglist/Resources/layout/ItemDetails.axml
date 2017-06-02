@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imageViewDetails" />
+        <TextView
+            android:text="Boardgame Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" />
+        <TextView
+            android:text="Boardgame description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+            android:paddingLeft="10dp"
+            android:textSize="10dp" />
+        <TextView
+            android:text="Mechanics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMechanics"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Players n - n2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtPlayers"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:text="Playing time nnn min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtPlayingtime"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <TextView
+            android:text="Released YYYY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRealeaseYear"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="Bgg rating n.nn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBggRating"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp" />
+            <TextView
+                android:text="Avarage rating n.nn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtAvarageRating"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+        <TextView
+            android:text="BGG Rank N"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBggRank"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="20dp" />
+        <Button
+            android:text="Add BGG id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddBggId"
+            android:inputType="number" />
+        <Button
+            android:text="Purchased!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSetPurchased"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" />
+        <Button
+            android:text="Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDelete"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+</ScrollView>

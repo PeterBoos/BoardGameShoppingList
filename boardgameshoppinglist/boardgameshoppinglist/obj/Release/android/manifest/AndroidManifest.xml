@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.boardgameshoppinglist.app" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="boardgameshoppinglist" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:label="About this App" android:name="md579285dc36285f1c11c000708e0d7c490.AboutActivity" />
+    <activity android:label="Add a new Item" android:name="md579285dc36285f1c11c000708e0d7c490.AddItemActivity" />
+    <activity android:label="EditItemActivity" android:name="md579285dc36285f1c11c000708e0d7c490.EditItemActivity" />
+    <activity android:label="Details" android:name="md579285dc36285f1c11c000708e0d7c490.ItemDetailsActivity" />
+    <activity android:label="Shopping list" android:name="md579285dc36285f1c11c000708e0d7c490.ItemListActivity" />
+    <activity android:icon="@drawable/icon" android:label="Boardgames Shoppinglist" android:name="md579285dc36285f1c11c000708e0d7c490.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.boardgameshoppinglist.app.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>
